@@ -14,20 +14,7 @@
         "diskSizeGb": {
             "type": "Int"
         },
-        "sourceResourceId": {
-            "type": "String"
-        },
-        "sourceUri": {
-            "type": "String"
-        },
-        "osType": {
-            "type": "String"
-        },
         "createOption": {
-            "type": "String"
-        },
-        "hyperVGeneration": {
-            "defaultValue": "V1",
             "type": "String"
         },
         "diskEncryptionSetType": {
@@ -52,7 +39,6 @@
                     "createOption": "[parameters('createOption')]"
                 },
                 "diskSizeGB": "[parameters('diskSizeGb')]",
-                "osType": "[parameters('osType')]",
                 "networkAccessPolicy": "[parameters('networkAccessPolicy')]"
             }
         }
